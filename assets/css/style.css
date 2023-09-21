@@ -1,0 +1,19 @@
+/*----------------------------------------------Font*/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+/*----------------------------------------------Box-sizing*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------General-styles*/
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/*----------------------------------------------Blue-section*/
+
+/*----------------------------------------------White-section*/
