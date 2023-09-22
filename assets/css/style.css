@@ -20,232 +20,51 @@
 body {
   font-family: 'Hanken Grotesk', sans-serif;
   text-align: center;
+  color: white;
+  background-color: rgb(241, 246, 247);
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
 p {
   margin: 0;
 }
 
-.col-2,
-.col-6,
-.col-4,
-.col-md-6,
-.col-md-4,
-.col-xs-12 {
-
-  padding: 0;
-  margin: 0;
+.wrapper {
+  height: 100vh;
+  width: 100vw;
 }
 
-.container {
-  padding: 0;
-}
-
-
-/*----------------------------------------------Blue-section*/
-.blue-section {
-  min-height: 45vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: .5rem;
-  background-image: linear-gradient(#6743ff, #312cea);
-  border-radius: 0 0 3rem 3rem;
-  color: white;
-  font-weight: 500;
-  padding-right: 2.5rem;
-  padding-left: 2.5rem;
-  padding-bottom: 2.5rem;
-  padding-top: .5rem;
-}
-
-.result-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 3rem;
-  padding-top: 1rem;
-}
-
-.result-col h5 {
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.circle {
-  background-image: linear-gradient(#4d22c9, #4734f0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 8.5rem;
-  height: 8.5rem;
-  border-radius: 7rem;
-}
-
-.circle h1 {
-  font-weight: 800;
-  font-size: 3rem;
-}
-
-.blue-section h4 {
-  font-size: 1.3rem;
-  margin-bottom: .5rem;
-}
-
-.blue-section p {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: .9rem;
-}
-
-.score-info {
-  width: 90%;
-  margin: 0 auto;
-}
-
-/*----------------------------------------------White-section*/
-.white-section {
-  width: 80%;
-  height: 55vh;
-}
-
-.summary-container {
-  display: flex;  
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.summary-spacing {
-  display: flex;  
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  width: 100%;
-}
-
-.info-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
-  height: 3rem;
-}
-
-
-.pink-bg {
-  background-color: rgba(212, 107, 117, .2);
-}
-
-.reaction-text {
-  color: var(--pink-)
-}
-
-.yellow-bg {
-  background-color: rgba(225, 191, 96, .2);
-
-}
-
-.memory-text {
-  color: var(--yellow-);
-}
-
-.green-bg {
-  background-color: rgba(52, 198, 154, .2);
-
-}
-
-.verbal-text {
-  color: var(--green-);
-}
-
+/*----------------------------------------------Blue section*/
 .blue-bg {
-  background-color: rgba(0, 4, 147, .2);
-
+  background-image: linear-gradient(#4d22c9, #6743ff);
+  height: 45vh;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
 }
 
-.visual-text {
-  color: var(--blue-)
+.blue-circle {
+  width: 9rem;
+  height: 9rem;
+  background-image: linear-gradient(#4d22c9, #6743ff);
+  border-radius: 9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.grey-score {
-  color: rgba(124, 124, 124, 0.7);
+/*----------------------------------------------White section*/
+.white-section {
+  color: black;
+  padding: 2rem;
 }
 
-.button-col {
-  margin: 2rem 0;
-  padding: 0;
-  height: 3rem;
+.summary-info {
+  background-color: rgba(100, 100, 100, .2)
 }
 
-.btn-height {
-  height: 100%;
+.score-text {
+  padding-left: 1rem;
+  padding-right: 8rem;
 }
-
-.summary-row {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  background-color: #2f3c58;
-  color: white;
-}
-
-.btn:hover {
-  background-image: linear-gradient(#6743ff, #312cea);
-  color: white;
-  border: none;
-}
-
- @media (min-width: 576px) {
-  .blue-section {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: .5rem;
-    background-image: linear-gradient(#6743ff, #312cea);
-    border-radius: 2rem 2rem 2rem 2rem;
-    color: white;
-    font-weight: 500;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
-    padding-bottom: 2.5rem;
-    padding-top: .5rem;
-  }
-
-  .wrapper {
-    width: 70vw;
-    height: 60vh;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(236, 236, 236);
-  }
-
-  .circle {
-    background-image: linear-gradient(#4d22c9, #4734f0);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 10rem;
-  }
-  
-  .circle h1 {
-    font-weight: 800;
-    font-size: 3rem;
-  }
-} 
