@@ -41,6 +41,7 @@ p {
 
 .container {
   background-color: rgb(241, 246, 247);
+  min-height: 100%;
 }
 
 /*----------------------------------------------Blue section*/
