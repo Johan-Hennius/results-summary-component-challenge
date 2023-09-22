@@ -1,6 +1,13 @@
 /*----------------------------------------------Font*/
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
+/*----------------------------------------------Colour-variables*/
+:root {
+--pink-: #d46b75;
+--yellow-: #edbe4e;
+--green-: #0e9e73;
+--blue-: #000b93;
+}
 
 /*----------------------------------------------Box-sizing*/
 *,
@@ -21,6 +28,14 @@ h3,
 h4,
 h5,
 p {
+  margin: 0;
+}
+
+.col-2,
+.col-6,
+.col-4 {
+
+  padding: 0;
   margin: 0;
 }
 
@@ -88,3 +103,85 @@ p {
 }
 
 /*----------------------------------------------White-section*/
+.white-section {
+  width: 80%;
+}
+
+.summary-container {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.summary-spacing {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  height: 3rem;
+}
+
+
+.pink-bg {
+  background-color: rgba(212, 107, 117, .2);
+}
+
+.reaction-text {
+  color: var(--pink-)
+}
+
+.yellow-bg {
+  background-color: rgba(225, 191, 96, .2);
+
+}
+
+.memory-text {
+  color: var(--yellow-);
+}
+
+.green-bg {
+  background-color: rgba(52, 198, 154, .2);
+
+}
+
+.verbal-text {
+  color: var(--green-);
+}
+
+.blue-bg {
+  background-color: rgba(0, 4, 147, .2);
+
+}
+
+.visual-text {
+  color: var(--blue-)
+}
+
+.grey-score {
+  color: rgba(124, 124, 124, 0.7);
+}
+
+.button-col {
+  margin: 2rem 0;
+  padding: 0;
+  height: 3rem;
+}
+
+.btn-height {
+  height: 100%;
+}
+
+.summary-row {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
