@@ -21,7 +21,6 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
   text-align: center;
   color: white;
-  background-color: rgb(241, 246, 247);
 }
 
 h1,
@@ -35,14 +34,17 @@ p {
 .wrapper {
   height: 100vh;
   width: 100vw;
+
+  background-color: rgb(241, 246, 247);
 }
 
 /*----------------------------------------------Blue section*/
 .blue-bg {
   background-image: linear-gradient(#4d22c9, #6743ff);
-  height: 40vh;
+  height: 100%;
   padding-top: 2rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 4rem;
+  border-radius: 0 0 2rem 2rem;
 }
 
 .blue-circle {
@@ -54,19 +56,72 @@ p {
   margin-bottom: 1rem;
 }
 
+.blue-bg-wrapper {
+  padding-bottom: .5rem;
+  width: 100%;
+  height: 100%;
+}
+
 /*----------------------------------------------White section*/
 .white-section {
-  height: 50vh;
+  height: 100%;
   color: black;
-  margin: 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .summary-info {
   background-color: rgba(100, 100, 100, .2);
-  height: 3rem;
+  height: 3.25rem;
 }
 
 .score-text {
   padding-left: 1rem;
   padding-right: 8rem;
+}
+
+/*----------------------------------------------Button*/
+.btn-bg-color {
+  background-color: #303b59;
+  border-color: #303b59;
+  height: 3.25rem;
+}
+
+.btn-bg-color:hover {
+  background-image: linear-gradient(#4d22c9, #6743ff);
+  border: none;
+  height: 3.25rem;
+}
+
+
+/*----------------------------------------------Media Query*/
+@media (min-width: 768px) {
+
+  .blue-bg {
+    background-image: linear-gradient(#4d22c9, #6743ff);
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    border-radius: 2rem;
+  }
+  
+  .blue-circle {
+    width: 10rem;
+    height: 10rem;
+    background-image: linear-gradient(#4d22c9, #6743ff);
+    border-radius: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .blue-bg-wrapper {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  
+
+  .white-section {
+    height: 100%;
+    color: black;
+    padding: 1.5rem 2rem;
+  }
 }
