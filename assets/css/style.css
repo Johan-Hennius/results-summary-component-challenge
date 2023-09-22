@@ -21,6 +21,7 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
   text-align: center;
   color: white;
+  min-height: 100vh;
 }
 
 h1,
@@ -32,9 +33,13 @@ p {
 }
 
 .wrapper {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
 
+.container {
   background-color: rgb(241, 246, 247);
 }
 
@@ -124,4 +129,13 @@ p {
     color: black;
     padding: 1.5rem 2rem;
   }
+
+  .container {
+    border-radius: 2.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
 }
