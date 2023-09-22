@@ -33,11 +33,19 @@ p {
 
 .col-2,
 .col-6,
-.col-4 {
+.col-4,
+.col-md-6,
+.col-md-4,
+.col-xs-12 {
 
   padding: 0;
   margin: 0;
 }
+
+.container {
+  padding: 0;
+}
+
 
 /*----------------------------------------------Blue-section*/
 .blue-section {
@@ -48,7 +56,7 @@ p {
   align-items: center;
   gap: .5rem;
   background-image: linear-gradient(#6743ff, #312cea);
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0 0 3rem 3rem;
   color: white;
   font-weight: 500;
   padding-right: 2.5rem;
@@ -105,6 +113,7 @@ p {
 /*----------------------------------------------White-section*/
 .white-section {
   width: 80%;
+  height: 55vh;
 }
 
 .summary-container {
@@ -196,3 +205,47 @@ p {
   color: white;
   border: none;
 }
+
+ @media (min-width: 576px) {
+  .blue-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    background-image: linear-gradient(#6743ff, #312cea);
+    border-radius: 2rem 2rem 2rem 2rem;
+    color: white;
+    font-weight: 500;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-top: .5rem;
+  }
+
+  .wrapper {
+    width: 70vw;
+    height: 60vh;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+  }
+
+  .circle {
+    background-image: linear-gradient(#4d22c9, #4734f0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+  }
+  
+  .circle h1 {
+    font-weight: 800;
+    font-size: 3rem;
+  }
+} 
