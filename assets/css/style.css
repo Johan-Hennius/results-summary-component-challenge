@@ -185,3 +185,14 @@ p {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.btn {
+  background-color: #2f3c58;
+  color: white;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#6743ff, #312cea);
+  color: white;
+  border: none;
+}
